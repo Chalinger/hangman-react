@@ -1,0 +1,16 @@
+.errors {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .errors-icons {
+        display: flex;
+        gap: 5px;
+    }
+
+    .errors-count {
+        font-weight: 700;
+        font-size: 20px;
+        color: red;
+    }
+}

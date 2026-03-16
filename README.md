@@ -1,16 +1,46 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ 
+## 🚀 Installation & lancement
+ 
+### 1. Démarrer l'API locale
+ 
+L'application dépend d'un serveur Node.js local pour récupérer les mots. Clonez et démarrez le projet [node-hangman-api](https://github.com/alexischarp-education/node-hangman-api) :
+ 
+```bash
+# Cloner l'API
+git clone https://github.com/alexischarp-education/node-hangman-api.git
+cd node-hangman-api
+ 
+# Installer les dépendances
+npm install
+ 
+# Lancer le serveur de développement
+npm run dev
+```
+ 
+> Le serveur démarre sur le port **3333** par défaut : `http://localhost:3333`
+ 
+---
+ 
+### 2. Démarrer l'application React
+ 
+Dans un **nouveau terminal**, clonez et lancez le projet hangman-react :
+ 
+```bash
+# Cloner le projet
+git clone https://github.com/Chalinger/hangman-react.git
+cd hangman-react
+ 
+# Installer les dépendances
+npm install
+ 
+# Lancer l'application
+npm start
+```
+ 
+> L'application sera accessible sur `http://localhost:3000`
+ 
+---
+ 
+## 🌐 API
+ 
+L'application communique avec l'API locale via une requête `POST` sur l'endpoint `/`.
